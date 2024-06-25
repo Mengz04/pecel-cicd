@@ -68,7 +68,7 @@ export default function Product(){
             </div>
             <div className='w-full h-full absolute'>
                 <div id='product-slide' className='pecel-img active'>
-                    <img src={Pecel} className='object-cover h-auto w-1/2 sm:w-1/3 lg:h-3/4 lg:w-auto transition duration-500 hover:scale-105'/>
+                    <img src={Pecel} className='object-cover h-auto w-1/2 sm:w-1/3 lg:h-3/4 lg:w-auto transition duration-500 hover:scale-105' alt="pecelImg"/>
                 </div>
             </div>
                        
