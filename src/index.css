@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #09090b;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f97316;
+    border-radius: 5px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #rgb(255, 136, 51)
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+.banner-header-main{
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.95);
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-header-top{
+    color: #FFF;
+    text-align: center;
+    font-family: "Allison", cursive;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.95);
+}
+
+.navbar-logo{
+    color: #FFF;
+    text-align: center;
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6.12px;
+}
+
+.pecel-img{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left:-25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.pecel-img.active{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.content-top-header{
+    color: #212121;
+    font-family: Allison;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content-main-header{
+    color: #2B2B2B;
+    font-family: Cinzel;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.karla-norm{
+    font-family: Karla;
+}
+
+.cinzel-norm{
+    font-family: Cinzel;
+}
+
+.allison-norm{
+    font-family: Allison;
+}
+
+@media only screen and (max-width: 1024px) {
+    .pecel-img{
+        position: absolute;
+        top: -50%; 
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .pecel-img.active{
+        position: absolute;
+        top: 35%; 
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+    }
+
+    .content-top-header{
+        color: #212121;
+        font-family: Allison;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .content-main-header{
+        color: #2B2B2B;
+        font-family: Cinzel;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

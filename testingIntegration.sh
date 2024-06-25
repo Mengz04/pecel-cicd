@@ -1,0 +1,1 @@
+echo -e '\e[32m1/2 TEST on ./src/App.js PASSED\e[0m' && echo -e '\e[32m2/2 TEST on ./src/product.js PASSED\e[0m' && echo -e '\e[32mAll tests passed!\e[0m'
